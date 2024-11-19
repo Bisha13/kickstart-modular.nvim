@@ -35,8 +35,6 @@ require('lazy').setup({
 
   require 'kickstart/plugins/cmp',
 
-  require 'kickstart/plugins/tokyonight',
-
   require 'kickstart/plugins/todo-comments',
 
   require 'kickstart/plugins/mini',
@@ -44,6 +42,8 @@ require('lazy').setup({
   require 'kickstart/plugins/treesitter',
 
   require 'kickstart/plugins/neogit',
+
+  require 'kickstart/plugins/themes',
 
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
