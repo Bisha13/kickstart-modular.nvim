@@ -45,4 +45,17 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- Redo
+vim.keymap.set({ 'n', 'v' }, 'U', '<c-R>', { desc = 'Redo' })
+
+-- Navigation
+vim.keymap.set({ 'n', 'v' }, 'gb', '<c-o>', { desc = '[G]o [B]ack' })
+vim.keymap.set({ 'n', 'v' }, 'gf', '<c-i>', { desc = '[G]o [F]orward' })
+
+-- Some movements
+vim.keymap.set({ 'n', 'v' }, 'J', '<c-d>', { desc = 'Go down' })
+vim.keymap.set({ 'n', 'v' }, 'K', '<c-u>', { desc = 'Go up' })
+vim.keymap.set({ 'n', 'v' }, 'H', '^', { desc = 'Go to start of string' })
+vim.keymap.set({ 'n', 'v' }, 'L', '$', { desc = 'Go to end of string' })
+
 -- vim: ts=2 sts=2 sw=2 et
