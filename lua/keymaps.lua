@@ -49,6 +49,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 vim.keymap.set({ 'n', 'v' }, 'U', '<c-R>', { desc = 'Redo' })
 
 -- Navigation
+vim.keymap.set({ 'n', 'v' }, '<leader>e', '<cmd>Ex<CR>', { desc = '[G]o [B]ack' })
 vim.keymap.set({ 'n', 'v' }, 'gb', '<c-o>', { desc = '[G]o [B]ack' })
 vim.keymap.set({ 'n', 'v' }, 'gf', '<c-i>', { desc = '[G]o [F]orward' })
 
